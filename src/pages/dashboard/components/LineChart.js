@@ -3,23 +3,25 @@ import {
   Chart as ChartJS,
   CategoryScale,
   LinearScale,
-  BarElement,
+  PointElement,
+  LineElement,
   Title,
   Tooltip,
   Legend,
 } from "chart.js";
-import { Bar } from "react-chartjs-2";
+import { Line } from "react-chartjs-2";
 
 ChartJS.register(
   CategoryScale,
   LinearScale,
-  BarElement,
+  PointElement,
+  LineElement,
   Title,
   Tooltip,
   Legend
 );
 
-export function BarChart(props) {
+export function LineChart(props) {
   const { data, size, title } = props;
   const options = {
     responsive: true,
@@ -41,7 +43,7 @@ export function BarChart(props) {
         padding: "20px",
       }}
     >
-      {data ? <Bar options={options} data={data} /> : null}
+      {data ? <Line options={options} data={data} /> : null}
     </div>
   );
 }

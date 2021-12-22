@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^7.2.1",
     "antd": "^4.3.4",
     "chart.js": "^3.6.2",
+    "html-react-parser": "^1.4.4",
     "react": "^16.13.1",
     "react-antd-dashboard": "^1.1.8",
     "react-chartjs-2": "^4.0.0",
